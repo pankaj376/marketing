@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- links for icon and fonts  -->
+	<script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<!-- links for tailwindcss  -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	
+	<!-- Your custom CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white-100">
+
+<header class="relative top-0 bg-gray-700 z-50 shadow-lg">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <!-- Logo -->
+      <div class="text-white text-2xl font-semibold">
+        Brand<span class="font-light">Name</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="../index.html" class="text-white hover:text-green-300 transition duration-300">Home</a>
+        <a href="about.html" class="text-white hover:text-green-300 transition duration-300">About Us</a>
+        
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <a href="#" class="text-white hover:text-green-300 transition duration-300">Services</a>
+          <div class="absolute left-0 hidden group-hover:block bg-green-800 text-white w-40 mt-2 space-y-2 p-2 rounded-md group-focus-within:block transition-opacity duration-200 delay-150 opacity-0 group-hover:opacity-100">
+            <a href="marketing.html" class="block px-3 py-2">Digital Marketing</a>
+            <a href="developer.html" class="block px-3 py-2">Software Development</a>
+          </div>
+        </div>
+
+        <!-- Blogs Dropdown -->
+        <div class="relative group">
+          <a href="#" class="text-white hover:text-green-300 transition duration-300">Blogs</a>
+          <div class="absolute left-0 hidden group-hover:block bg-green-800 text-white w-40 mt-2 space-y-2 p-2 rounded-md group-focus-within:block transition-opacity duration-200 delay-150 opacity-0 group-hover:opacity-100">
+            <a href="blog1.html" class="block px-3 py-2">Blog 1</a>
+            <a href="#" class="block px-3 py-2">Blog 2</a>
+            <a href="#" class="block px-3 py-2">Blog 3</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white">
+          <!-- Hamburger icon using Font Awesome -->
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-green-800 text-white hidden">
+      <ul class="space-y-4 py-4">
+        <li><a href="../index.html" class="block px-4 py-2">Home</a></li>
+        <li><a href="about.html" class="block px-4 py-2">About Us</a></li>
+
+        <!-- Mobile Services Dropdown -->
+        <li class="relative">
+          <button class="block px-4 py-2 text-white hover:text-green-300" id="services-toggle">
+            Services
+          </button>
+          <ul id="services-dropdown" class="hidden bg-green-800 text-white w-40 mt-2 space-y-2 p-2 rounded-md">
+            <li><a href="marketing.html" class="block px-3 py-2">Digital Marketing</a></li>
+            <li><a href="developer.html" class="block px-3 py-2">Software Development</a></li>
+          </ul>
+        </li>
+
+        <!-- Mobile Blogs Dropdown -->
+        <li class="relative">
+          <button class="block px-4 py-2 text-white hover:text-green-300" id="blogs-toggle">
+            Blogs
+          </button>
+          <ul id="blogs-dropdown" class="hidden bg-green-800 text-white w-40 mt-2 space-y-2 p-2 rounded-md">
+            <li><a href="blog1.html" class="block px-3 py-2">Blog 1</a></li>
+            <li><a href="#" class="block px-3 py-2">Blog 2</a></li>
+            <li><a href="#" class="block px-3 py-2">Blog 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- Top Section -->
+  <section class="h-[90vh] flex items-center justify-center text-white text-center bg-cover bg-center bg-no-repeat" 
+    style="background-image: url('https://i.ibb.co/vvKPHjKH/bluebg.webp');">
+    <div class="max-w-4xl p-6 rounded-lg">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Welcome to the Blog</h1>
+      <p class="text-base sm:text-lg md:text-xl">Discover the latest insights, tips, and trends in digital marketing and beyond.</p>
+    </div>
+  </section>
+
+  <!-- Blog Content -->
+  <div class="container mx-auto px-4 sm:px-8 md:px-16 py-8">
+    <!-- Full Image -->
+    <div class="mb-8 mt-10">
+      <img src="https://i.ibb.co/qM3VMjt/PPC-Pro-s.png" alt="Blog post image" class="mx-auto w-full md:w-9/12 lg:w-8/12" style="height: auto;">
+    </div>
+
+    <!-- Text Content with Same Width as Image -->
+    <div class="mx-auto w-full md:w-9/12 lg:w-8/12 text-gray-800 text-base sm:text-lg md:text-xl">
+      <p class="mb-4">
+        Imagine this: You own a cozy coffee shop in downtown Toronto. You brew the best coffee, but you’re not seeing many new customers. Why? They can’t find you online. That’s where local SEO steps in. It makes your business visible to people searching for a “coffee shop near me.”
+      </p>
+      <p class="mb-4">
+        Local SEO is a game-changer in digital marketing solutions. It helps connect your business with nearby customers who are ready to engage. Let’s explore why local SEO is essential and how the right SEO services can boost your business.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-8 md:px-16 py-8">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 md:w-9/12 lg:w-8/12 mx-auto">
+      What Is Local SEO?
+    </h2>
+    
+    <!-- Full Image -->
+    <div class="mb-6">
+      <img src="https://i.ibb.co/mX6Wjsg/office-work.webp" alt="Blog post image" class="mx-auto w-full md:w-9/12 lg:w-8/12" style="height: auto;">
+    </div>
+
+    <!-- Text Content with Same Width as Image -->
+    <div class="mx-auto w-full md:w-9/12 lg:w-8/12 text-gray-800 text-base sm:text-lg md:text-xl">
+      <p class="mb-4">
+        Local SEO is all about making your business discoverable in location-based searches. For example, if someone searches for “plumbers in Calgary,” a business optimized for local SEO will show up in their results.
+      </p>
+      <p class="mb-4">
+        It’s not just about ranking high on Google. It’s about appearing where it matters – in map packs, local directories, and even voice search results. By using tools like Google My Business (GMB) and optimizing local keywords, businesses can increase visibility in their area.
+      </p>
+    </div>
+</div>
+
+
+  <div class="container mx-auto px-4 sm:px-8 md:px-16 py-8">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 md:w-9/12 lg:w-8/12 mx-auto">Why Local SEO Is Essential In Digital Marketing Solutions</h2>
+    <!-- Full Image -->
+    <div class="mb-6">
+      <img src="https://i.ibb.co/qM3VMjt/PPC-Pro-s.png" alt="Blog post image" class="mx-auto w-full md:w-9/12 lg:w-8/12" style="height: auto;">
+    </div>
+
+    <!-- Text Content with Same Width as Image -->
+    <div class="mx-auto w-full md:w-9/12 lg:w-8/12 text-gray-800 text-base sm:text-lg md:text-xl">
+      <p class="mb-4">
+        Local SEO plays a critical role in reaching the right audience. Here’s why:
+      </p>
+      <ul class="list-disc pl-5 mb-4">
+        <li><strong>Targeted Reach:</strong> Connects you with people actively searching for your services. These customers are already interested.</li>
+        <li><strong>Improved Visibility:</strong> Your business shows up on Google Maps and search results.</li>
+        <li><strong>Higher Conversions:</strong> Lead to quick actions like calls, bookings, or visits.</li>
+        <li><strong>Increased Foot Traffic:</strong> Can find your business online, they’re more likely to visit in person.</li>
+      </ul>
+      <p class="mb-4">
+        For businesses in Canada, where local markets vary greatly, local SEO is a must. Whether you’re in Vancouver or Halifax, SEO services tailored to your location can work wonders.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-8 md:px-16 py-8">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 md:w-9/12 lg:w-8/12 mx-auto">Key Components Of Local SEO In Digital Marketing Solutions</h2>
+    <!-- Full Image -->
+    <div class="mb-6">
+      <img src="https://i.ibb.co/mX6Wjsg/office-work.webp" alt="Blog post image" class="mx-auto w-full md:w-9/12 lg:w-8/12" style="height: auto;">
+    </div>
+
+    <!-- Text Content with Same Width as Image -->
+    <div class="mx-auto w-full md:w-9/12 lg:w-8/12 text-gray-800 text-base sm:text-lg md:text-xl">
+      <p class="mb-4">
+        Let’s break down what makes local SEO effective:
+      </p>
+      <ul class="list-disc pl-5 mb-4">
+        <li><strong>Google My Business (GMB):</strong>
+          <ul class="list-[circle] pl-6 mt-2">
+            <li>Claim and optimize your GMB profile.</li>
+            <li>Ensure accurate details like name, address, and phone (NAP).</li>
+            <li>Add photos and encourage customer reviews.</li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="list-disc pl-5 mb-4">
+        <li><strong>Local Keywords:</strong>
+          <ul class="list-[circle] pl-6 mt-2">
+            <li>Use tools to find keywords like “best Italian restaurant in Edmonton.”</li>
+            <li>Incorporate these keywords into your website and blogs.</li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="list-disc pl-5 mb-4">
+        <li><strong>Customer Reviews:</strong>
+          <ul class="list-[circle] pl-6 mt-2">
+            <li>Positive reviews improve your rankings.</li>
+            <li>Respond to all reviews, even negative ones, to build trust.</li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="list-disc pl-5 mb-4">
+        <li><strong>Mobile Optimization:</strong>
+          <ul class="list-[circle] pl-6 mt-2">
+            <li>Make your website mobile-friendly. Most local searches happen on smartphones.</li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="list-disc pl-5 mb-4">
+        <li><strong>Local Backlinks:</strong>
+          <ul class="list-[circle] pl-6 mt-2">
+            <li>Partner with local blogs and directories to earn backlinks.</li>
+            <li>Support community events to gain mentions online.</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="mb-4">
+        By focusing on these components, businesses can create effective local SEO strategies.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-8 md:px-16 py-8">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 md:w-9/12 lg:w-8/12 mx-auto">Local SEO Vs. Traditional SEO</h2>
+    <!-- Full Image -->
+    <div class="mb-6">
+      <img src="https://i.ibb.co/mX6Wjsg/office-work.webp" alt="Blog post image" class="mx-auto w-full md:w-9/12 lg:w-8/12" style="height: auto;">
+    </div>
+
+    <!-- Text Content with Same Width as Image -->
+    <div class="mx-auto w-full md:w-9/12 lg:w-8/12 text-gray-800 text-base sm:text-lg md:text-xl">
+      <p class="mb-4">
+        While traditional SEO focuses on global or national visibility, local SEO is more personalized. It targets people near your business. Here’s a quick comparison:
+      </p>
+      <ul class="list-disc pl-5 mb-4">
+        <li><strong>Local SEO:</strong>
+          <ul class="list-[circle] pl-6 mt-2">
+            <li>Prioritizes location-based keywords.</li>
+            <li>Optimizes for Google Maps and local directories.</li>
+            <li>Focuses on immediate customer actions like calls or visits.</li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="list-disc pl-5 mb-4">
+        <li><strong>Traditional SEO:</strong>
+          <ul class="list-[circle] pl-6 mt-2">
+            <li>Focuses on ranking for broad, national/global keywords.</li>
+            <li>Has a wider scope but may be less targeted for local businesses.</li>
+            <li>Typically leads to online actions like clicks or views.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="custom-footer" id="footer">
+      <div class="custom-footer-left">
+        <h3>Company<span>logo</span></h3>
+        <p class="custom-footer-links">
+          <a href="#" class="custom-link-1">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Faq</a>
+          <a href="#">Contact</a>
+        </p>
+        <p class="custom-footer-company-name">Company Name © 2015</p>
+      </div>
+      <div class="custom-footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+      </div>
+      <div class="custom-footer-right">
+        <p class="custom-footer-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+        <div class="custom-footer-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+<!-- Style and script for navbar  -->	
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  </style>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    // Toggle dropdowns on click for mobile
+    document.getElementById("services-toggle").addEventListener("click", function() {
+      document.getElementById("services-dropdown").classList.toggle("hidden");
+    });
+
+    document.getElementById("blogs-toggle").addEventListener("click", function() {
+      document.getElementById("blogs-dropdown").classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+
+</html>

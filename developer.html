@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Development Services</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- links for icon and fonts  -->
+	<script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<!-- links for tailwindcss  -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	
+	<!-- Your custom CSS -->
+	<link rel="stylesheet" href="style.css">
+	  
+</head>
+<body>
+	<header class="relative top-0 bg-gray-700 z-50 shadow-lg">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <!-- Logo -->
+      <div class="text-white text-2xl font-semibold">
+        Brand<span class="font-light">Name</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="../index.html" class="text-white hover:text-green-300 transition duration-300">Home</a>
+        <a href="about.html" class="text-white hover:text-green-300 transition duration-300">About Us</a>
+        
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <a href="#" class="text-white hover:text-green-300 transition duration-300">Services</a>
+          <div class="absolute left-0 hidden group-hover:block bg-green-800 text-white w-40 mt-2 space-y-2 p-2 rounded-md group-focus-within:block transition-opacity duration-200 delay-150 opacity-0 group-hover:opacity-100">
+            <a href="marketing.html" class="block px-3 py-2">Digital Marketing</a>
+            <a href="developer.html" class="block px-3 py-2">Software Development</a>
+          </div>
+        </div>
+
+        <!-- Blogs Dropdown -->
+        <div class="relative group">
+          <a href="#" class="text-white hover:text-green-300 transition duration-300">Blogs</a>
+          <div class="absolute left-0 hidden group-hover:block bg-green-800 text-white w-40 mt-2 space-y-2 p-2 rounded-md group-focus-within:block transition-opacity duration-200 delay-150 opacity-0 group-hover:opacity-100">
+            <a href="blog1.html" class="block px-3 py-2">Blog 1</a>
+            <a href="#" class="block px-3 py-2">Blog 2</a>
+            <a href="#" class="block px-3 py-2">Blog 3</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white">
+          <!-- Hamburger icon using Font Awesome -->
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-green-800 text-white hidden">
+      <ul class="space-y-4 py-4">
+        <li><a href="../index.html" class="block px-4 py-2">Home</a></li>
+        <li><a href="about.html" class="block px-4 py-2">About Us</a></li>
+
+        <!-- Mobile Services Dropdown -->
+        <li class="relative">
+          <button class="block px-4 py-2 text-white hover:text-green-300" id="services-toggle">
+            Services
+          </button>
+          <ul id="services-dropdown" class="hidden bg-green-800 text-white w-40 mt-2 space-y-2 p-2 rounded-md">
+            <li><a href="marketing.html" class="block px-3 py-2">Digital Marketing</a></li>
+            <li><a href="developer.html" class="block px-3 py-2">Software Development</a></li>
+          </ul>
+        </li>
+
+        <!-- Mobile Blogs Dropdown -->
+        <li class="relative">
+          <button class="block px-4 py-2 text-white hover:text-green-300" id="blogs-toggle">
+            Blogs
+          </button>
+          <ul id="blogs-dropdown" class="hidden bg-green-800 text-white w-40 mt-2 space-y-2 p-2 rounded-md">
+            <li><a href="blog1.html" class="block px-3 py-2">Blog 1</a></li>
+            <li><a href="#" class="block px-3 py-2">Blog 2</a></li>
+            <li><a href="#" class="block px-3 py-2">Blog 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+<section class="font-sans bg-gray-50 text-gray-800">
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center text-white text-center py-20 min-h-[80vh] flex flex-col justify-center items-center" style="background-image: url('https://i.ibb.co/vvKPHjKH/bluebg.webp');">
+        <h1 class="text-2xl sm:text-4xl font-bold px-4">Transform Your Ideas into Cutting-Edge Software Solutions</h1>
+		<p class="mt-4 text-base sm:text-lg px-4">Bringing innovation, excellence, and expertise to every project.</p>
+        <a href="#contact" class="mt-8 inline-block bg-green-500 text-white py-2 px-6 rounded-full text-lg hover:bg-green-600">Get a Free Quote</a>
+    </section>
+
+<!-- Our Expertise Section -->
+<section class="py-20 px-6" id="expertise">
+    <div class="container mx-auto px-6 md:px-12 lg:px-16">
+        <h2 class="text-2xl sm:text-4xl md:text-4xl font-semibold text-center text-gray-800 mb-12">Our Expertise</h2>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-12">
+            
+            <!-- Web & Mobile App Development Card -->
+            <div class="w-full md:w-80 mx-auto bg-blue-500 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105">
+                <div class="p-6">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-laptop-code text-4xl text-black"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl md:text-2xl font-bold text-white text-center mb-4">Web & Mobile App Development</h3>
+                    <p class="text-sm sm:text-base md:text-lg text-center text-white">Responsive web applications and high-performance mobile apps for iOS and Android.</p>
+                </div>
+            </div>
+
+            <!-- Enterprise Solutions Card -->
+            <div class="w-full md:w-80 mx-auto bg-blue-500 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105">
+                <div class="p-6">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-cogs text-4xl text-black"></i>    
+                    </div>
+                    <h3 class="text-xl sm:text-2xl md:text-2xl font-bold text-white text-center mb-4">Enterprise Solutions</h3>
+                    <p class="text-sm sm:text-base md:text-lg text-center text-white">ERP, CRM, and other enterprise-grade applications to streamline your operations.</p>
+                </div>
+            </div>
+
+            <!-- AI & Machine Learning Card -->
+            <div class="w-full md:w-80 mx-auto bg-blue-500 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105">
+                <div class="p-6">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-brain text-4xl text-black"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl md:text-2xl font-bold text-white text-center mb-4">AI & Machine Learning</h3>
+                    <p class="text-sm sm:text-base md:text-lg text-center text-white">Building intelligent systems that automate processes and enhance decision-making.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid for Last Two Cards + Image -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+            
+            <!-- E-commerce Development Card -->
+            <div class="w-full md:w-80 mx-auto bg-blue-500 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105">
+                <div class="p-6">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-shopping-cart text-4xl text-black"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl md:text-2xl font-bold text-white text-center mb-4">E-commerce Development</h3>
+                    <p class="text-sm sm:text-base md:text-lg text-center text-white">Dynamic, user-friendly e-commerce platforms that enhance online sales.</p>
+                </div>
+            </div>
+
+            <!-- Center Image (Fills the Empty Space) -->
+            <div class="w-full flex justify-center items-center">
+                <img src="https://i.ibb.co/Lh5hFQ6j/Expert.png" alt="Expertise Illustration" class="max-w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Cybersecurity & Data Protection Card -->
+            <div class="w-full md:w-80 mx-auto bg-blue-500 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105">
+                <div class="p-6">
+                    <div class="flex justify-center mb-8">
+                        <i class="fas fa-shield-alt text-4xl text-black"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl md:text-2xl font-bold text-white text-center mb-4">Cybersecurity & Data Protection</h3>
+                    <p class="text-sm sm:text-base md:text-lg text-center text-white">Ensuring your applications are secure with the latest cybersecurity measures.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <p class="text-lg sm:text-xl md:text-2xl">We don’t just build software – we build success. Let’s turn your ideas into reality!</p>
+            <a href="#contact" class="mt-4 inline-block bg-green-500 text-white py-2 px-6 rounded-full text-lg hover:bg-green-600">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Why Choose Us Section -->
+<section class="bg-gray-100 py-20 px-6 md:px-12 lg:px-16" id="why-choose-us">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Why Choose Us</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="flex items-center space-x-4">
+            <div class="text-blue-600 text-3xl">🚀</div>
+            <div>
+                <h3 class="font-semibold text-xl">Expertise & Experience</h3>
+                <p class="mt-2">Deep technical expertise and industry insights to deliver cutting-edge solutions.</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="text-blue-600 text-3xl">🔧</div>
+            <div>
+                <h3 class="font-semibold text-xl">Tailored Solutions</h3>
+                <p class="mt-2">Customized software solutions that align with your business goals and requirements.</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="text-blue-600 text-3xl">💡</div>
+            <div>
+                <h3 class="font-semibold text-xl">Innovation-Driven Approach</h3>
+                <p class="mt-2">Leverage the latest technologies, including AI, blockchain, cloud computing, and more.</p>
+            </div>
+        </div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+        <div class="flex items-center space-x-4">
+            <div class="text-blue-600 text-3xl">🔍</div>
+            <div>
+                <h3 class="font-semibold text-xl">Quality & Performance</h3>
+                <p class="mt-2">Prioritizing high-quality code, rigorous testing, and performance optimization.</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="text-blue-600 text-3xl">🔄</div>
+            <div>
+                <h3 class="font-semibold text-xl">End-to-End Support</h3>
+                <p class="mt-2">Comprehensive support from consultation to post-launch maintenance.</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="text-blue-600 text-3xl">🛡️</div>
+            <div>
+                <h3 class="font-semibold text-xl">Security & Compliance</h3>
+                <p class="mt-2">Best practices in cybersecurity to ensure your software meets security standards.</p>
+            </div>
+        </div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+        <div class="flex items-center space-x-4">
+            <div class="text-blue-600 text-3xl">⏳</div>
+            <div>
+                <h3 class="font-semibold text-xl">On-Time Delivery</h3>
+                <p class="mt-2">Agile development process ensuring timely delivery without compromising quality.</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="text-blue-600 text-3xl">💬</div>
+            <div>
+                <h3 class="font-semibold text-xl">Client-Centric Approach</h3>
+                <p class="mt-2">Transparent communication and a collaborative development process.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Technologies We Use Section -->
+<section class="py-20 px-6 md:px-12 lg:px-16 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100" id="technologies">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Technologies We Use</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <h3 class="text-xl font-semibold text-blue-600 flex justify-center items-center">
+                💻 Programming Languages
+            </h3>
+            <ul class="list-disc pl-12 mt-4 text-left">
+                <li><i class="fab fa-python mr-2"></i>Python</li>
+                <li><i class="fab fa-java mr-2"></i>Java</li>
+                <li><i class="fab fa-js-square mr-2"></i>JavaScript / TypeScript</li>
+                <li><i class="fab fa-cuttlefish mr-2"></i>C#</li>
+                <li><i class="fab fa-php mr-2"></i>PHP</li>
+            </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <h3 class="text-xl font-semibold text-blue-600 flex justify-center items-center">
+                🌐 Web Development
+            </h3>
+            <ul class="list-disc pl-12 mt-4 text-left">
+                <li><i class="fab fa-react mr-2"></i>React.js</li>
+                <li><i class="fab fa-angular mr-2"></i>Angular</li>
+                <li><i class="fab fa-vuejs mr-2"></i>Vue.js</li>
+                <li><i class="fab fa-js-square mr-2"></i>Next.js</li>
+                <li><i class="fas fa-cogs mr-2"></i>Django</li>
+                <li><i class="fab fa-laravel mr-2"></i>Laravel</li>
+            </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <h3 class="text-xl font-semibold text-blue-600 flex justify-center items-center">
+                📱 Mobile App Development
+            </h3>
+            <ul class="list-disc pl-12 mt-4 text-left">
+                <li><i class="fas fa-code mr-2"></i>Flutter</li>
+                <li><i class="fas fa-mobile-alt mr-2"></i>React Native</li>
+                <li><i class="fab fa-apple mr-2"></i>Swift (iOS)</li>
+                <li><i class="fab fa-android mr-2"></i>Kotlin (Android)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <h3 class="text-xl font-semibold text-blue-600 flex justify-center items-center">
+                🛠 Backend & API Development
+            </h3>
+            <ul class="list-disc pl-12 mt-4 text-left">
+                <li><i class="fab fa-node mr-2"></i>Node.js</li>
+                <li><i class="fas fa-code-branch mr-2"></i>Express.js</li>
+                <li><i class="fas fa-cogs mr-2"></i>Django</li>
+                <li><i class="fas fa-bolt mr-2"></i>FastAPI</li>
+            </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <h3 class="text-xl font-semibold text-blue-600 flex justify-center items-center">
+                ☁️ Cloud & DevOps
+            </h3>
+            <ul class="list-disc pl-12 mt-4 text-left">
+                <li><i class="fab fa-aws mr-2"></i>AWS</li>
+                <li><i class="fab fa-microsoft mr-2"></i>Microsoft Azure</li>
+                <li><i class="fab fa-google mr-2"></i>Google Cloud Platform</li>
+            </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <h3 class="text-xl font-semibold text-blue-600 flex justify-center items-center">
+                🧠 AI & Machine Learning
+            </h3>
+            <ul class="list-disc pl-12 mt-4 text-left">
+                <li><i class="fab fa-tensor mr-2"></i>TensorFlow</li>
+                <li><i class="fab fa-pytorch mr-2"></i>PyTorch</li>
+                <li><i class="fas fa-robot mr-2"></i>OpenAI</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <h3 class="text-xl font-semibold text-blue-600 flex justify-center items-center">
+                📊 Database Technologies
+            </h3>
+            <ul class="list-disc pl-12 mt-4 text-left">
+                <li><i class="fas fa-database mr-2"></i>PostgreSQL</li>
+                <li><i class="fas fa-database mr-2"></i>MySQL</li>
+                <li><i class="fas fa-database mr-2"></i>MongoDB</li>
+            </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <h3 class="text-xl font-semibold text-blue-600 flex justify-center items-center">
+                🛒 E-commerce Platforms
+            </h3>
+            <ul class="list-disc pl-12 mt-4 text-left">
+                <li><i class="fab fa-magento mr-2"></i>Magento</li>
+                <li><i class="fab fa-shopify mr-2"></i>Shopify</li>
+                <li><i class="fab fa-wordpress mr-2"></i>WooCommerce</li>
+                <li><i class="fab fa-btc mr-2"></i>BigCommerce</li>
+            </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <h3 class="text-xl font-semibold text-blue-600 flex justify-center items-center">
+                🔐 Cybersecurity & Authentication
+            </h3>
+            <ul class="list-disc pl-12 mt-4 text-left">
+                <li><i class="fas fa-shield-alt mr-2"></i>OAuth 2.0</li>
+                <li><i class="fas fa-lock mr-2"></i>JWT Authentication</li>
+                <li><i class="fas fa-tools mr-2"></i>Penetration Testing Tools</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+   <section class="bg-gray-100 py-20 px-6" id="process">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Our Process</h2>
+    <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+        
+        <!-- Step 1 -->
+        <div class="group w-full md:w-1/4 bg-white p-6 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:bg-blue-600 hover:text-white">
+            <div class="flex items-start space-x-4">
+                <div class="bg-blue-600 group-hover:bg-white text-white group-hover:text-blue-600 text-4xl rounded-full p-4 transition-all duration-300">1️⃣</div>
+                <div>
+                    <h3 class="font-semibold text-xl text-gray-800 group-hover:text-white">Discovery & Requirement Analysis</h3>
+                    <p class="mt-2 text-gray-600 group-hover:text-white">We understand your business needs and define the project scope with clear goals and functionalities.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="group w-full md:w-1/4 bg-white p-6 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:bg-blue-600 hover:text-white">
+            <div class="flex items-start space-x-4">
+                <div class="bg-blue-600 group-hover:bg-white text-white group-hover:text-blue-600 text-4xl rounded-full p-4 transition-all duration-300">2️⃣</div>
+                <div>
+                    <h3 class="font-semibold text-xl text-gray-800 group-hover:text-white">Design & Prototyping</h3>
+                    <p class="mt-2 text-gray-600 group-hover:text-white">We create wireframes, UI/UX designs, and prototypes for a user-friendly experience.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Step 3 -->
+        <div class="group w-full md:w-1/4 bg-white p-6 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:bg-blue-600 hover:text-white">
+            <div class="flex items-start space-x-4">
+                <div class="bg-blue-600 group-hover:bg-white text-white group-hover:text-blue-600 text-4xl rounded-full p-4 transition-all duration-300">3️⃣</div>
+                <div>
+                    <h3 class="font-semibold text-xl text-gray-800 group-hover:text-white">Development & Testing</h3>
+                    <p class="mt-2 text-gray-600 group-hover:text-white">Our developers build the solution, while continuous testing ensures quality and security.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Step 4 -->
+        <div class="group w-full md:w-1/4 bg-white p-6 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:bg-blue-600 hover:text-white">
+            <div class="flex items-start space-x-4">
+                <div class="bg-blue-600 group-hover:bg-white text-white group-hover:text-blue-600 text-4xl rounded-full p-4 transition-all duration-300">4️⃣</div>
+                <div>
+                    <h3 class="font-semibold text-xl text-gray-800 group-hover:text-white">Deployment & Maintenance</h3>
+                    <p class="mt-2 text-gray-600 group-hover:text-white">We deploy and provide ongoing support, monitoring, and updates to ensure long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="py-20 px-6 bg-blue-600 text-white" id="contact">
+        <h2 class="text-3xl font-semibold text-center mb-6">Get In Touch</h2>
+        <p class="text-xl text-center mb-6">Ready to turn your ideas into powerful software? Contact us today!</p>
+        <div class="text-center">
+            <a href="mailto:contact@yourdomain.com" class="bg-green-500 text-white py-2 px-6 rounded-full text-lg hover:bg-green-600">Contact Us</a>
+        </div>
+    </section>
+</section>
+
+<footer class="custom-footer" id="footer">
+      <div class="custom-footer-left">
+        <h3>Company<span>logo</span></h3>
+        <p class="custom-footer-links">
+          <a href="#" class="custom-link-1">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Faq</a>
+          <a href="#">Contact</a>
+        </p>
+        <p class="custom-footer-company-name">Company Name © 2015</p>
+      </div>
+      <div class="custom-footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+      </div>
+      <div class="custom-footer-right">
+        <p class="custom-footer-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+        <div class="custom-footer-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+<!-- Style and script for navbar  -->	
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  </style>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    // Toggle dropdowns on click for mobile
+    document.getElementById("services-toggle").addEventListener("click", function() {
+      document.getElementById("services-dropdown").classList.toggle("hidden");
+    });
+
+    document.getElementById("blogs-toggle").addEventListener("click", function() {
+      document.getElementById("blogs-dropdown").classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
